@@ -1,5 +1,5 @@
 server:
-  port: 8989
+  port: 8888
 spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
@@ -8,14 +8,13 @@ spring:
     password: Asd8711341
     url: jdbc:mysql://101.200.216.156:3306/db_bbs?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=Hongkong
   application:
-    name: bbs-user
+    name: bbs-board
 mybatis:
   configuration:
     map-underscore-to-camel-case: true    #将_转为驼峰命名
 mapper:
   identity: MYSQL   # 标识列用mysql  配置主键自动增长
-
-logging:  #日志配置
+logging:
   level:
     com.yc.springcloud812: debug
 
@@ -24,12 +23,12 @@ eureka:
     service-url:
       defaultZone: http://admin:a@eureka1:7001/eureka
   instance:
-    instance-id: bbs-user_1   #实例名
+    instance-id:  bbs-board_1   #实例名
 
 
 #监控配置
 info:
-  app.name: BBS-USER
+  app.name: BBS-BOARD
   company.name: gsn
   build.artifactId: $project.artifactId$
   build.modelVersion: $project.modelVersion$

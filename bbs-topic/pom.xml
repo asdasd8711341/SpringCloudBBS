@@ -9,9 +9,8 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>bbs-user</artifactId>
-    <name>bbs-user</name>
-
+    <artifactId>bbs-topic</artifactId>
+    <name>bbs-topic</name>
     <dependencies>
 
         <!-- 因为这里引入了 microservice-api ,所以要在父项目中指定 这个模块的版本，-->

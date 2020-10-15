@@ -9,6 +9,11 @@
     <modules>
         <module>bbs-user</module>
         <module>bbs-api</module>
+        <module>bbs-eureka</module>
+        <module>bbs-board</module>
+        <module>bbs-security</module>
+        <module>bbs-reply</module>
+        <module>bbs-topic</module>
     </modules>
     <name>bbs</name>
     <description>Demo project for Spring Boot</description>
@@ -74,6 +79,11 @@
             <dependency>
                 <groupId>com.gsn.bbs</groupId>
                 <artifactId>bbs-api</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.gsn.bbs</groupId>
+                <artifactId>bbs-security</artifactId>
                 <version>0.0.1-SNAPSHOT</version>
             </dependency>
         </dependencies>

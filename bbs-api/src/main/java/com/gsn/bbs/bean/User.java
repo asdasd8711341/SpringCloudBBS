@@ -2,6 +2,7 @@ package com.gsn.bbs.bean;
 
 
 import lombok.Data;
+import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.Id;
 import javax.persistence.Table;
@@ -16,6 +17,7 @@ public class User {
     private  String uname;
     private  String upass;
     private  String head;
+    @DateTimeFormat(pattern="yyyy-MM-dd")
     private Date regtime;
     private  Integer gender;
 

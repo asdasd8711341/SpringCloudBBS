@@ -1,5 +1,5 @@
 server:
-  port: 8989
+  port: 9999
 spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
@@ -8,7 +8,7 @@ spring:
     password: Asd8711341
     url: jdbc:mysql://101.200.216.156:3306/db_bbs?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=Hongkong
   application:
-    name: bbs-user
+    name: bbs-reply
 mybatis:
   configuration:
     map-underscore-to-camel-case: true    #将_转为驼峰命名
@@ -24,12 +24,12 @@ eureka:
     service-url:
       defaultZone: http://admin:a@eureka1:7001/eureka
   instance:
-    instance-id: bbs-user_1   #实例名
+    instance-id: bbs-reply_1   #实例名
 
 
 #监控配置
 info:
-  app.name: BBS-USER
+  app.name: BBS-REPLY
   company.name: gsn
   build.artifactId: $project.artifactId$
   build.modelVersion: $project.modelVersion$
